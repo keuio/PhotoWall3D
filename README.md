@@ -1,6 +1,9 @@
 # PhotoWall3D
 3D 球面照片墙组件 (PhotoWall3D) 这是一个基于 **GSAP** 动画库开发的 3D 照片墙组件。它能将一组图片自动排布成一个 3D 球体，支持自动旋转、鼠标/触摸拖拽交互以及点击放大查看。（A high-performance 3D photo wall component built with **GSAP**. It automatically arranges a collection of images into a 3D sphere, supporting auto-rotation, mouse/touch drag interaction, and a smooth "click-to-zoom" feature.）
 
+### 预览效果
+![3D照片墙效果图](2026-01-03_20-37-50.gif)
+###### （展开的图片是要大图显示的，一开始忘记了，后面再弄了）
 
 ## 🌟 功能特性
 

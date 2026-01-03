@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D 照片墙组件演示</title>
+    <link rel="stylesheet" href="PhotoWall3D.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            font-family: sans-serif;
+        }
+
+        .tips {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            z-index: 100;
+            pointer-events: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tips">
+        <p>🖱️ 按住鼠标左右拖动可旋转</p>
+        <p>👆 点击图片可放大查看</p>
+    </div>
+
+    <div id="myPhotoWall"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="PhotoWall3D.js"></script>
+
+    <script>
+        // 这里模拟一些图片数据
+        // 在实际使用中，你可以把这里的 URL 换成你真实的图片路径
+        const images = [];
+        for (let i = 1; i <= 30; i++) {
+            images.push(`https://picsum.photos/200/200?random=${i}`);
+        }
+
+        // 实例化组件
+        const wall = new PhotoWall3D('myPhotoWall', images, {
+            autoPlaySpeed: 0.1, // 自动旋转速度，数值越大越快
+            dragSensitivity: 0.1 // 拖拽灵敏度，数值越大鼠标动一点转得越多
+        });
+    </script>
+</body>
+
+</html>

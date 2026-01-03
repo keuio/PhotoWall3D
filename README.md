@@ -71,7 +71,7 @@
 | `dragSensitivity` | `Number` | `0.1` | 鼠标拖拽时的灵敏度 |
 | `rowHeight` | `Number` | `-8` | 行与行之间的垂直偏移量 |
 
-## 注意事项
-图片数量：为了保证最佳的 3D 效果，组件默认会生成约 190 个卡片位。如果你传入的 myImages 数组只有 10 张图，组件会自动循环重复使用这些图片来填满球体。
+## 🛠️ 注意事项
+* 图片数量：为了保证最佳的 3D 效果，组件默认会生成约 190 个卡片位。如果你传入的 myImages 数组只有 10 张图，组件会自动循环重复使用这些图片来填满球体。
 
-图片大小：在 PhotoWall3D.css 中修改 .pw-card 的 width 和 height 即可。
+* 图片大小：在 PhotoWall3D.css 中修改 .pw-card 的 width 和 height 即可。
